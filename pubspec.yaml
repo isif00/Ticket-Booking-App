@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   fluentui_system_icons: ^1.1.208
+  get: ^4.6.5
   gap: ^3.0.1
 
 dev_dependencies:
