@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../utils/app_layout.dart';
+import '../widgets/double_text_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -96,23 +97,8 @@ class HomeScreen extends StatelessWidget {
                 Gap(
                   AppLayout.getHeight(20),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Upcoming Flights',
-                      style: Styles.headLineStyle2,
-                    ),
-                    InkWell(
-                      onTap: () {},
-                      child: Text(
-                        'View all',
-                        style: Styles.textStyle
-                            .copyWith(color: Styles.primaryColor),
-                      ),
-                    ),
-                  ],
-                ),
+                const AppDoubleTextWidget(
+                    bigText: 'UpComing Flights', smallText: 'View all'),
               ],
             ),
           ),
@@ -141,23 +127,8 @@ class HomeScreen extends StatelessWidget {
               top: AppLayout.getHeight(20),
               bottom: AppLayout.getHeight(20),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Hotels',
-                  style: Styles.headLineStyle2,
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: Text(
-                    'View all',
-                    style:
-                        Styles.textStyle.copyWith(color: Styles.primaryColor),
-                  ),
-                ),
-              ],
-            ),
+            child: const AppDoubleTextWidget(
+                bigText: 'Hotels', smallText: 'view all'),
           ),
           Gap(AppLayout.getHeight(5)),
           SingleChildScrollView(

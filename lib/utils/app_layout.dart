@@ -1,6 +1,11 @@
+import 'package:flutter/widgets.dart';
 import 'package:get/route_manager.dart';
 
 class AppLayout {
+  static getSize(BuildContext context) {
+    return MediaQuery.of(context).size;
+  }
+
   static getScreenHeight() {
     return Get.height;
   }
